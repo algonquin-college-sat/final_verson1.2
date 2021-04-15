@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="apane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="924.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <MenuBar prefHeight="40.0" prefWidth="924.0" styleClass="menu-btn" stylesheets="@AppUI.css">
+        <menus>
+          <Menu fx:id="accountsmanagement" mnemonicParsing="false" text="AccountsManagement">
+            <items>
+              <MenuItem id="accountsDisplay" mnemonicParsing="false" onAction="#displayAccounts" text="AccountsOverview" />
+              <MenuItem mnemonicParsing="false" onAction="#displayTrans" text="PurchaseRecord" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="EventsManagement">
+            <items>
+              <MenuItem id="eventsDisplay" mnemonicParsing="false" onAction="#displayEvents" text="EventsInfo" />
+                  <MenuItem mnemonicParsing="false" text="EventsOverview" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Overview">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="subPane" layoutY="60.0" prefHeight="646.0" prefWidth="925.0" styleClass="dark-gray-theme" stylesheets="@AppUI.css">
+         <children>
+            <ImageView fitHeight="513.0" fitWidth="934.0" layoutX="6.0" layoutY="120.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/management-system.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="164.0" layoutY="23.0" prefHeight="78.0" prefWidth="580.0" stylesheets="@AppUI.css" text="                  Ticketing Management System ">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="dark-gray-theme" />
+                  <String fx:value="font-white" />
+               </styleClass>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

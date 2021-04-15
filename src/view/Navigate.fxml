@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="817.0" stylesheets="@AppUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NavigationController">
+   <children>
+      <SplitPane dividerPositions="0.2196319018404908" prefHeight="650.0" prefWidth="817.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="dark-gray-theme">
+               <children>
+                  <VBox layoutX="1.0" prefHeight="648.0" prefWidth="176.0" styleClass="dark-theme">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#toProfile" prefHeight="83.0" prefWidth="175.0" styleClass="vbox-menu-btn" text="Profile" textFill="#2b6e32">
+                           <font>
+                              <Font name="Arial Bold Italic" size="21.0" />
+                           </font>
+                        </Button>
+                        
+                        <Button mnemonicParsing="false" onAction="#viewEvents" prefHeight="83.0" prefWidth="175.0" styleClass="vbox-menu-btn" text="Events" textFill="#2b6e32">
+                           <font>
+                              <Font name="Arial Bold Italic" size="21.0" />
+                           </font>
+                        </Button>
+                        
+                        <Button mnemonicParsing="false" onAction="#viewHistory" prefHeight="83.0" prefWidth="175.0" styleClass="vbox-menu-btn" text="Order History" textFill="#2b6e32">
+                           <font>
+                              <Font name="Arial Bold Italic" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="adminBtn" mnemonicParsing="false" onAction="#toAdminPage" prefHeight="83.0" prefWidth="176.0" styleClass="vbox-menu-btn" text="Admin" textFill="#2b6e32">
+                           <font>
+                              <Font name="Arial Bold Italic" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="creatorBtn" mnemonicParsing="false" onAction="#toCreatorPage" prefHeight="76.0" prefWidth="176.0" styleClass="vbox-menu-btn" text="Event Creator" textFill="#2b6e32">
+                           <font>
+                              <Font name="Arial Bold Italic" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="creatorBtn1" mnemonicParsing="false" onAction="#exit" prefHeight="76.0" prefWidth="176.0" styleClass="vbox-menu-btn" text="Exit" textFill="#2b6e32">
+                           <font>
+                              <Font name="Arial Bold Italic" size="21.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="54.0" fitWidth="172.0">
+                           <image>
+                              <Image url="@../image/PQA%20logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="subPane" minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="629.0" styleClass="dark-gray-theme">
+               <children>
+                  <ImageView fitHeight="642.0" fitWidth="632.0" layoutX="2.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../image/navigate.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

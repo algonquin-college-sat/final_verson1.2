@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" 
+xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventDetailController">
+    <children>
+        <Label fx:id="eventTitle" layoutX="83.0" layoutY="70.0" text="Event Title">
+            <font>
+                <Font name="Arial Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="eventTime" layoutX="83.0" layoutY="160.0" text="EventTime" textFill="#b9b3b3">
+            <font>
+                <Font name="Arial Italic" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="description" alignment="TOP_LEFT" layoutX="83.0" layoutY="277.0" prefHeight="175.0" prefWidth="619.0" text="Description">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_purchase" layoutX="620.0" layoutY="512.0" mnemonicParsing="false" onAction="#purchase" prefWidth="110.0" style="-fx-background-color: #eae704;" text="purchase">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="70.0" layoutY="513.0" mnemonicParsing="false" onAction="#toEventPage" prefWidth="110.0" text="Back">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="83.0" layoutY="237.0" text="Description:">
+            <font>
+                <Font name="MS Outlook" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

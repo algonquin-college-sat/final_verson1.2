@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="499.0" prefWidth="754.0" styleClass="dark-theme" stylesheets="@AppUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Main2Controller">
+   <children>
+      <Button fx:id="signupBtn" layoutX="447.0" layoutY="429.0" mnemonicParsing="false" onAction="#register" prefWidth="123.0" text="sign up">
+         <styleClass>
+            <String fx:value="btn-basic" />
+            <String fx:value="green-theme" />
+            <String fx:value="font-title" />
+            <String fx:value="btn-radius-large" />
+         </styleClass></Button>
+      <Button layoutX="604.0" layoutY="429.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="123.0" text="Sign in">
+         <styleClass>
+            <String fx:value="btn-basic" />
+            <String fx:value="green-theme" />
+            <String fx:value="font-title" />
+            <String fx:value="btn-radius-large" />
+         </styleClass></Button>
+      <ImageView fitHeight="393.0" fitWidth="764.0" opacity="0.98">
+         <image>
+            <Image url="@../image/concert1.jpg" />
+         </image>
+         <effect>
+            <Bloom threshold="0.75" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="217.0" layoutX="14.0" layoutY="409.0">
+         <image>
+            <Image url="@../image/PQA%20logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

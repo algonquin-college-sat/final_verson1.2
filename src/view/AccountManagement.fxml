@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" styleClass="dark-gray-theme" stylesheets="@AppUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" prefHeight="700.0" prefWidth="902.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Account Management">
+                            <font>
+                                <Font name="System Bold" size="40.0" />
+                            </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.17475728155339806" startY="0.3058252427184466">
+                           <stops>
+                              <Stop color="#147c65" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="111.0" prefWidth="600.0" spacing="30.0">
+                    <children>
+                        <Label prefHeight="27.0" prefWidth="160.0" text="Account Name :">
+                     <styleClass>
+                        <String fx:value="font-title" />
+                        <String fx:value="font-white" />
+                     </styleClass></Label>
+                        <TextField fx:id="bookTypeNameTextField" styleClass="input-group" />
+                        <Button fx:id="checkButton" mnemonicParsing="false" text="Search">
+                     <styleClass>
+                        <String fx:value="btn-basic" />
+                        <String fx:value="btn-radius-large" />
+                        <String fx:value="green-theme" />
+                        <String fx:value="font-title" />
+                     </styleClass></Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="296.0" prefWidth="600.0">
+               <children>
+                  <TableView prefHeight="279.0" prefWidth="857.0">
+                    <columns>
+                      <TableColumn prefWidth="126.0" text="First_Name" />
+                      <TableColumn minWidth="0.0" prefWidth="123.0" text="Last_Name" />
+                        <TableColumn prefWidth="179.0" text="Password" />
+                        <TableColumn prefWidth="232.0" text="EmailAddress" />
+                        <TableColumn prefWidth="200.0" text="PhoneNumber" />
+                    </columns>
+                  </TableView>
+               </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="263.0" prefWidth="600.0">
+                    <children>
+                        <VBox fx:id="formVBox" prefHeight="246.0" prefWidth="859.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="842.0" spacing="10.0">
+                                    <children>
+                                        <Label prefHeight="41.0" prefWidth="87.0" stylesheets="@AppUI.css" text="First_Name :">
+                                 <styleClass>
+                                    <String fx:value="font-white" />
+                                    <String fx:value="font-title" />
+                                 </styleClass></Label>
+                                        <TextField fx:id="idTextField" prefHeight="32.0" prefWidth="144.0" />
+                              <Label prefHeight="51.0" prefWidth="171.0" stylesheets="@AppUI.css" text="        Password :">
+                                 <styleClass>
+                                    <String fx:value="font-white" />
+                                    <String fx:value="font-title" />
+                                 </styleClass></Label>
+                              <TextField prefHeight="32.0" prefWidth="233.0" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="40.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox prefHeight="81.0" prefWidth="855.0" spacing="10.0">
+                                    <children>
+                                        <Label prefHeight="32.0" prefWidth="86.0" stylesheets="@AppUI.css" text="Last_Name :">
+                                 <styleClass>
+                                    <String fx:value="font-white" />
+                                    <String fx:value="font-title" />
+                                 </styleClass></Label>
+                              <TextField prefHeight="31.0" prefWidth="145.0" />
+                              <Label prefHeight="32.0" prefWidth="175.0" stylesheets="@AppUI.css" text="       EmailAddress:">
+                                 <styleClass>
+                                    <String fx:value="font-white" />
+                                    <String fx:value="font-title" />
+                                 </styleClass></Label>
+                              <TextField prefHeight="31.0" prefWidth="233.0" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="40.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                                    <children>
+                                        <Button fx:id="alterButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" stylesheets="@AppUI.css" text="Edit">
+                                 <styleClass>
+                                    <String fx:value="btn-basic" />
+                                    <String fx:value="font-title" />
+                                    <String fx:value="font-white" />
+                                    <String fx:value="green-theme" />
+                                    <String fx:value="btn-radius-large" />
+                                 </styleClass></Button>
+                                        <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" stylesheets="@AppUI.css" text="Delete">
+                                 <styleClass>
+                                    <String fx:value="btn-basic" />
+                                    <String fx:value="font-title" />
+                                    <String fx:value="font-white" />
+                                    <String fx:value="green-theme" />
+                                    <String fx:value="btn-radius-large" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" stylesheets="@AppUI.css" text="Back">
+                                 <styleClass>
+                                    <String fx:value="btn-basic" />
+                                    <String fx:value="font-title" />
+                                    <String fx:value="font-white" />
+                                    <String fx:value="green-theme" />
+                                    <String fx:value="btn-radius-large" />
+                                 </styleClass></Button>
+                                    </children>
+                                    <padding>
+                                        <Insets left="40.0" />
+                                    </padding>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

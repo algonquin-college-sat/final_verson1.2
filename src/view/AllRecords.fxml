@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="549.0" prefWidth="909.0" xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/8" fx:controller="controller.AllRecordsController">
+   <children>
+      <Label layoutX="3.0" layoutY="3.0" prefHeight="75.0" prefWidth="217.0" text="Transaction Information">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="viewAll" layoutY="79.0" prefHeight="469.0" prefWidth="909.0">
+        <columns>
+          <TableColumn fx:id="event" prefWidth="154.0" text="event" />
+          <TableColumn fx:id="cardNumber" prefWidth="166.0" text="cardNumber" />
+            <TableColumn fx:id="price" prefWidth="112.0" text="price" />
+            <TableColumn fx:id="account" prefWidth="225.0" text="account" />
+            <TableColumn fx:id="date" prefWidth="249.0" text="transaction date" />
+        </columns>
+      </TableView>
+      <Button fx:id="exitBtn" layoutX="784.0" onAction="#exit" layoutY="25.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="Exit" />
+   </children>
+</AnchorPane>

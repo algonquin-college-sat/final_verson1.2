@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="582.0" prefWidth="826.0" styleClass="dark-gray-theme" stylesheets="@AppUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventsforUserController">
+   <children>
+      <Label layoutX="534.0" layoutY="7.0" prefHeight="50.0" prefWidth="278.0" text="Events Details">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4563106796116505">
+               <stops>
+                  <Stop color="#118055" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="eventView" layoutX="8.0" layoutY="84.0" prefHeight="308.0" prefWidth="791.0" styleClass="table-column" stylesheets="@AppUI.css">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="232.0" text="title" />
+          <TableColumn fx:id="date" prefWidth="187.0" text="date" />
+            <TableColumn fx:id="creator" prefWidth="157.0" text="creator" />
+            <TableColumn fx:id="price" prefWidth="120.0" text="price" />
+            <TableColumn fx:id="available" prefWidth="94.0" text="Available" />
+        </columns>
+      </TableView>
+      <Button layoutX="280.0" layoutY="39.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="124.0" text="Search">
+         <styleClass>
+            <String fx:value="btn-basic" />
+            <String fx:value="green-theme" />
+            <String fx:value="font-title" />
+            <String fx:value="btn-radius-normal" />
+         </styleClass></Button>
+      <TextField fx:id="eventName" layoutX="37.0" layoutY="42.0" prefHeight="31.0" prefWidth="195.0" />
+      <Label layoutX="1.0" layoutY="417.0" prefHeight="49.0" prefWidth="133.0" text="Description:" />
+      <TextArea fx:id="despcription" layoutX="91.0" layoutY="428.0" prefHeight="144.0" prefWidth="538.0" />
+      <Button layoutX="655.0" layoutY="472.0" mnemonicParsing="false" onAction="#purchase" prefHeight="49.0" prefWidth="144.0" text="Purchase">
+         <styleClass>
+            <String fx:value="btn-basic" />
+            <String fx:value="green-theme" />
+            <String fx:value="btn-radius-large" />
+            <String fx:value="font-title" />
+         </styleClass></Button>
+   </children>
+</AnchorPane>
